@@ -1,22 +1,20 @@
-import ph001 from "../assets/places/001.jpg";
 
-export const Card = () => {
+export const Card = ({ img: { src, alt }, country, title, date: { onDate, closeDate }, details }) => {
     return (
         <main>
             <div className="card">
-                <img src={ph001} className="card-img" alt="Mount Fuji" />
+                <img src={src} className="card-img" alt={alt} />
                 <div className="card-container">
                     <div className="card-top">
-                        <span>🇯🇵 JAPAN</span>
+                        <span>{country}</span>
                         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
                             View on Google Maps
                         </a>
                     </div>
-                    <h1 className="card-title">Mount Fuji</h1>
-                    <p className="card-date">12 Jan, 2021 - 24 Jan, 2021</p>
+                    <h1 className="card-title">{title}</h1>
+                    <p className="card-date">{onDate} - {closeDate}</p>
                     <p className="card-description">
-                        Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet).
-                        Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                        {details}
                     </p>
                 </div>
             </div>
