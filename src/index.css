@@ -1,0 +1,86 @@
+body {
+  margin: 1;
+}
+
+header {
+  background-color: red;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.globe-logo {
+  width: 40px;
+}
+
+.header {
+  color: white;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.card-img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.card-top a {
+  color: #888;
+  text-decoration: none;
+}
+
+.card-top a:hover {
+  text-decoration: underline;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+main {
+  padding: 30px 40px;
+}
